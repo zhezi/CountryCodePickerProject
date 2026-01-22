@@ -148,7 +148,7 @@ public class CCPCountry implements Comparable<CCPCountry> {
         loadedLibraryMaterList = countries;
 
         // sort list
-        Collections.sort(loadedLibraryMaterList);
+        //Collections.sort(loadedLibraryMaterList);
     }
 
     public static String getDialogTitle(Context context, CountryCodePicker.Language language) {
@@ -399,490 +399,492 @@ public class CCPCountry implements Comparable<CCPCountry> {
     static int getFlagMasterResID(CCPCountry CCPCountry) {
         switch (CCPCountry.getNameCode().toLowerCase()) {
             //this should be sorted based on country name code.
-            case "ad": //andorra
+            case "and": // andorra
                 return R.drawable.flag_andorra;
-            case "ae": //united arab emirates
+            case "are": // united arab emirates
                 return R.drawable.flag_uae;
-            case "af": //afghanistan
+            case "afg": // afghanistan
                 return R.drawable.flag_afghanistan;
-            case "ag": //antigua & barbuda
+            case "atg": // antigua & barbuda
                 return R.drawable.flag_antigua_and_barbuda;
-            case "ai": //anguilla // Caribbean Islands
+            case "aia": // anguilla
                 return R.drawable.flag_anguilla;
-            case "al": //albania
+            case "alb": // albania
                 return R.drawable.flag_albania;
-            case "am": //armenia
+            case "arm": // armenia
                 return R.drawable.flag_armenia;
-            case "ao": //angola
+            case "ago": // angola
                 return R.drawable.flag_angola;
-            case "aq": //antarctica // custom
+            case "ata": // antarctica
                 return R.drawable.flag_antarctica;
-            case "ar": //argentina
+            case "arg": // argentina
                 return R.drawable.flag_argentina;
-            case "as": //American Samoa
+            case "asm": // american samoa
                 return R.drawable.flag_american_samoa;
-            case "at": //austria
+            case "aut": // austria
                 return R.drawable.flag_austria;
-            case "au": //australia
+            case "aus": // australia
                 return R.drawable.flag_australia;
-            case "aw": //aruba
+            case "abw": // aruba
                 return R.drawable.flag_aruba;
-            case "ax": //alan islands
+            case "ala": // aland islands
                 return R.drawable.flag_aland;
-            case "az": //azerbaijan
+            case "aze": // azerbaijan
                 return R.drawable.flag_azerbaijan;
-            case "ba": //bosnia and herzegovina
+            case "bih": // bosnia and herzegovina
                 return R.drawable.flag_bosnia;
-            case "bb": //barbados
+            case "brb": // barbados
                 return R.drawable.flag_barbados;
-            case "bd": //bangladesh
+            case "bgd": // bangladesh
                 return R.drawable.flag_bangladesh;
-            case "be": //belgium
+            case "bel": // belgium
                 return R.drawable.flag_belgium;
-            case "bf": //burkina faso
+            case "bfa": // burkina faso
                 return R.drawable.flag_burkina_faso;
-            case "bg": //bulgaria
+            case "bgr": // bulgaria
                 return R.drawable.flag_bulgaria;
-            case "bh": //bahrain
+            case "bhr": // bahrain
                 return R.drawable.flag_bahrain;
-            case "bi": //burundi
+            case "bdi": // burundi
                 return R.drawable.flag_burundi;
-            case "bj": //benin
+            case "ben": // benin
                 return R.drawable.flag_benin;
-            case "bl": //saint barthélemy
-                return R.drawable.flag_saint_barthelemy;// custom
-            case "bm": //bermuda
+            case "blm": // saint barthelemy
+                return R.drawable.flag_saint_barthelemy;
+            case "bmu": // bermuda
                 return R.drawable.flag_bermuda;
-            case "bn": //brunei darussalam // custom
+            case "brn": // brunei darussalam
                 return R.drawable.flag_brunei;
-            case "bo": //bolivia, plurinational state of
+            case "bol": // bolivia
                 return R.drawable.flag_bolivia;
-            case "br": //brazil
+            case "bra": // brazil
                 return R.drawable.flag_brazil;
-            case "bs": //bahamas
+            case "bhs": // bahamas
                 return R.drawable.flag_bahamas;
-            case "bt": //bhutan
+            case "btn": // bhutan
                 return R.drawable.flag_bhutan;
-            case "bw": //botswana
+            case "bwa": // botswana
                 return R.drawable.flag_botswana;
-            case "by": //belarus
+            case "blr": // belarus
                 return R.drawable.flag_belarus;
-            case "bz": //belize
+            case "blz": // belize
                 return R.drawable.flag_belize;
-            case "ca": //canada
+            case "can": // canada
                 return R.drawable.flag_canada;
-            case "cc": //cocos (keeling) islands
-                return R.drawable.flag_cocos;// custom
-            case "cd": //congo, the democratic republic of the
+            case "cck": // cocos (keeling) islands
+                return R.drawable.flag_cocos;
+            case "cod": // democratic republic of the congo
                 return R.drawable.flag_democratic_republic_of_the_congo;
-            case "cf": //central african republic
+            case "caf": // central african republic
                 return R.drawable.flag_central_african_republic;
-            case "cg": //congo
+            case "cog": // republic of the congo
                 return R.drawable.flag_republic_of_the_congo;
-            case "ch": //switzerland
+            case "che": // switzerland
                 return R.drawable.flag_switzerland;
-            case "ci": //côte d\'ivoire
+            case "civ": // cote d'ivoire
                 return R.drawable.flag_cote_divoire;
-            case "ck": //cook islands
+            case "cok": // cook islands
                 return R.drawable.flag_cook_islands;
-            case "cl": //chile
+            case "chl": // chile
                 return R.drawable.flag_chile;
-            case "cm": //cameroon
+            case "cmr": // cameroon
                 return R.drawable.flag_cameroon;
-            case "cn": //china
+            case "chn": // china
                 return R.drawable.flag_china;
-            case "co": //colombia
+            case "col": // colombia
                 return R.drawable.flag_colombia;
-            case "cr": //costa rica
+            case "cri": // costa rica
                 return R.drawable.flag_costa_rica;
-            case "cu": //cuba
+            case "cub": // cuba
                 return R.drawable.flag_cuba;
-            case "cv": //cape verde
+            case "cpv": // cape verde
                 return R.drawable.flag_cape_verde;
-            case "cw": //curaçao
+            case "cuw": // curacao
                 return R.drawable.flag_curacao;
-            case "cx": //christmas island
+            case "cxr": // christmas island
                 return R.drawable.flag_christmas_island;
-            case "cy": //cyprus
+            case "cyp": // cyprus
                 return R.drawable.flag_cyprus;
-            case "cz": //czech republic
+            case "cze": // czech republic
                 return R.drawable.flag_czech_republic;
-            case "de": //germany
+            case "deu": // germany
                 return R.drawable.flag_germany;
-            case "dj": //djibouti
+            case "dji": // djibouti
                 return R.drawable.flag_djibouti;
-            case "dk": //denmark
+            case "dnk": // denmark
                 return R.drawable.flag_denmark;
-            case "dm": //dominica
+            case "dma": // dominica
                 return R.drawable.flag_dominica;
-            case "do": //dominican republic
+            case "dom": // dominican republic
                 return R.drawable.flag_dominican_republic;
-            case "dz": //algeria
+            case "dza": // algeria
                 return R.drawable.flag_algeria;
-            case "ec": //ecuador
+            case "ecu": // ecuador
                 return R.drawable.flag_ecuador;
-            case "ee": //estonia
+            case "est": // estonia
                 return R.drawable.flag_estonia;
-            case "eg": //egypt
+            case "egy": // egypt
                 return R.drawable.flag_egypt;
-            case "er": //eritrea
+            case "eri": // eritrea
                 return R.drawable.flag_eritrea;
-            case "es": //spain
+            case "esp": // spain
                 return R.drawable.flag_spain;
-            case "et": //ethiopia
+            case "eth": // ethiopia
                 return R.drawable.flag_ethiopia;
-            case "fi": //finland
+            case "fin": // finland
                 return R.drawable.flag_finland;
-            case "fj": //fiji
+            case "fji": // fiji
                 return R.drawable.flag_fiji;
-            case "fk": //falkland islands (malvinas)
+            case "flk": // falkland islands
                 return R.drawable.flag_falkland_islands;
-            case "fm": //micronesia, federated states of
+            case "fsm": // micronesia
                 return R.drawable.flag_micronesia;
-            case "fo": //faroe islands
+            case "fro": // faroe islands
                 return R.drawable.flag_faroe_islands;
-            case "fr": //france
+            case "fra": // france
                 return R.drawable.flag_france;
-            case "ga": //gabon
+            case "gab": // gabon
                 return R.drawable.flag_gabon;
-            case "gb": //united kingdom
+            case "gbr": // united kingdom
                 return R.drawable.flag_united_kingdom;
-            case "gd": //grenada
+            case "grd": // grenada
                 return R.drawable.flag_grenada;
-            case "ge": //georgia
+            case "geo": // georgia
                 return R.drawable.flag_georgia;
-            case "gf": //guyane
+            case "guf": // french guiana
                 return R.drawable.flag_guyane;
-            case "gg": //Guernsey
+            case "ggy": // guernsey
                 return R.drawable.flag_guernsey;
-            case "gh": //ghana
+            case "gha": // ghana
                 return R.drawable.flag_ghana;
-            case "gi": //gibraltar
+            case "gib": // gibraltar
                 return R.drawable.flag_gibraltar;
-            case "gl": //greenland
+            case "grl": // greenland
                 return R.drawable.flag_greenland;
-            case "gm": //gambia
+            case "gmb": // gambia
                 return R.drawable.flag_gambia;
-            case "gn": //guinea
+            case "gin": // guinea
                 return R.drawable.flag_guinea;
-            case "gp": //guadeloupe
+            case "glp": // guadeloupe
                 return R.drawable.flag_guadeloupe;
-            case "gq": //equatorial guinea
+            case "gnq": // equatorial guinea
                 return R.drawable.flag_equatorial_guinea;
-            case "gr": //greece
+            case "grc": // greece
                 return R.drawable.flag_greece;
-            case "gt": //guatemala
+            case "gtm": // guatemala
                 return R.drawable.flag_guatemala;
-            case "gu": //Guam
+            case "gum": // guam
                 return R.drawable.flag_guam;
-            case "gw": //guinea-bissau
+            case "gnb": // guinea-bissau
                 return R.drawable.flag_guinea_bissau;
-            case "gy": //guyana
+            case "guy": // guyana
                 return R.drawable.flag_guyana;
-            case "hk": //hong kong
+            case "hkg": // hong kong
                 return R.drawable.flag_hong_kong;
-            case "hn": //honduras
+            case "hnd": // honduras
                 return R.drawable.flag_honduras;
-            case "hr": //croatia
+            case "hrv": // croatia
                 return R.drawable.flag_croatia;
-            case "ht": //haiti
+            case "hti": // haiti
                 return R.drawable.flag_haiti;
-            case "hu": //hungary
+            case "hun": // hungary
                 return R.drawable.flag_hungary;
-            case "id": //indonesia
+            case "idn": // indonesia
                 return R.drawable.flag_indonesia;
-            case "ie": //ireland
+            case "irl": // ireland
                 return R.drawable.flag_ireland;
-            case "il": //israel
+            case "isr": // israel
                 return R.drawable.flag_israel;
-            case "im": //isle of man
-                return R.drawable.flag_isleof_man; // custom
-            case "is": //Iceland
+            case "imn": // isle of man
+                return R.drawable.flag_isleof_man;
+            case "isl": // iceland
                 return R.drawable.flag_iceland;
-            case "in": //india
+            case "ind": // india
                 return R.drawable.flag_india;
-            case "io": //British indian ocean territory
+            case "iot": // british indian ocean territory
                 return R.drawable.flag_british_indian_ocean_territory;
-            case "iq": //iraq
+            case "irq": // iraq
                 return R.drawable.flag_iraq_new;
-            case "ir": //iran, islamic republic of
+            case "irn": // iran
                 return R.drawable.flag_iran;
-            case "it": //italy
+            case "ita": // italy
                 return R.drawable.flag_italy;
-            case "je": //Jersey
+            case "jey": // jersey
                 return R.drawable.flag_jersey;
-            case "jm": //jamaica
+            case "jam": // jamaica
                 return R.drawable.flag_jamaica;
-            case "jo": //jordan
+            case "jor": // jordan
                 return R.drawable.flag_jordan;
-            case "jp": //japan
+            case "jpn": // japan
                 return R.drawable.flag_japan;
-            case "ke": //kenya
+            case "ken": // kenya
                 return R.drawable.flag_kenya;
-            case "kg": //kyrgyzstan
+            case "kgz": // kyrgyzstan
                 return R.drawable.flag_kyrgyzstan;
-            case "kh": //cambodia
+            case "khm": // cambodia
                 return R.drawable.flag_cambodia;
-            case "ki": //kiribati
+            case "kir": // kiribati
                 return R.drawable.flag_kiribati;
-            case "km": //comoros
+            case "com": // comoros
                 return R.drawable.flag_comoros;
-            case "kn": //st kitts & nevis
+            case "kna": // saint kitts and nevis
                 return R.drawable.flag_saint_kitts_and_nevis;
-            case "kp": //north korea
+            case "prk": // north korea
                 return R.drawable.flag_north_korea;
-            case "kr": //south korea
+            case "kor": // south korea
                 return R.drawable.flag_south_korea;
-            case "kw": //kuwait
+            case "kwt": // kuwait
                 return R.drawable.flag_kuwait;
-            case "ky": //Cayman_Islands
+            case "cym": // cayman islands
                 return R.drawable.flag_cayman_islands;
-            case "kz": //kazakhstan
+            case "kaz": // kazakhstan
                 return R.drawable.flag_kazakhstan;
-            case "la": //lao people\'s democratic republic
+            case "lao": // laos
                 return R.drawable.flag_laos;
-            case "lb": //lebanon
+            case "lbn": // lebanon
                 return R.drawable.flag_lebanon;
-            case "lc": //st lucia
+            case "lca": // saint lucia
                 return R.drawable.flag_saint_lucia;
-            case "li": //liechtenstein
+            case "lie": // liechtenstein
                 return R.drawable.flag_liechtenstein;
-            case "lk": //sri lanka
+            case "lka": // sri lanka
                 return R.drawable.flag_sri_lanka;
-            case "lr": //liberia
+            case "lbr": // liberia
                 return R.drawable.flag_liberia;
-            case "ls": //lesotho
+            case "lso": // lesotho
                 return R.drawable.flag_lesotho;
-            case "lt": //lithuania
+            case "ltu": // lithuania
                 return R.drawable.flag_lithuania;
-            case "lu": //luxembourg
+            case "lux": // luxembourg
                 return R.drawable.flag_luxembourg;
-            case "lv": //latvia
+            case "lva": // latvia
                 return R.drawable.flag_latvia;
-            case "ly": //libya
+            case "lby": // libya
                 return R.drawable.flag_libya;
-            case "ma": //morocco
+            case "mar": // morocco
                 return R.drawable.flag_morocco;
-            case "mc": //monaco
+            case "mco": // monaco
                 return R.drawable.flag_monaco;
-            case "md": //moldova, republic of
+            case "mda": // moldova
                 return R.drawable.flag_moldova;
-            case "me": //montenegro
-                return R.drawable.flag_of_montenegro;// custom
-            case "mf":
+            case "mne": // montenegro
+                return R.drawable.flag_of_montenegro;
+            case "maf": // saint martin
                 return R.drawable.flag_saint_martin;
-            case "mg": //madagascar
+            case "mdg": // madagascar
                 return R.drawable.flag_madagascar;
-            case "mh": //marshall islands
+            case "mhl": // marshall islands
                 return R.drawable.flag_marshall_islands;
-            case "mk": //macedonia, the former yugoslav republic of
+            case "mkd": // north macedonia
                 return R.drawable.flag_macedonia;
-            case "ml": //mali
+            case "mli": // mali
                 return R.drawable.flag_mali;
-            case "mm": //myanmar
+            case "mmr": // myanmar
                 return R.drawable.flag_myanmar;
-            case "mn": //mongolia
+            case "mng": // mongolia
                 return R.drawable.flag_mongolia;
-            case "mo": //macao
+            case "mac": // macao
                 return R.drawable.flag_macao;
-            case "mp": // Northern mariana islands
+            case "mnp": // northern mariana islands
                 return R.drawable.flag_northern_mariana_islands;
-            case "mq": //martinique
+            case "mtq": // martinique
                 return R.drawable.flag_martinique;
-            case "mr": //mauritania
+            case "mrt": // mauritania
                 return R.drawable.flag_mauritania;
-            case "ms": //montserrat
+            case "msr": // montserrat
                 return R.drawable.flag_montserrat;
-            case "mt": //malta
+            case "mlt": // malta
                 return R.drawable.flag_malta;
-            case "mu": //mauritius
+            case "mus": // mauritius
                 return R.drawable.flag_mauritius;
-            case "mv": //maldives
+            case "mdv": // maldives
                 return R.drawable.flag_maldives;
-            case "mw": //malawi
+            case "mwi": // malawi
                 return R.drawable.flag_malawi;
-            case "mx": //mexico
+            case "mex": // mexico
                 return R.drawable.flag_mexico;
-            case "my": //malaysia
+            case "mys": // malaysia
                 return R.drawable.flag_malaysia;
-            case "mz": //mozambique
+            case "moz": // mozambique
                 return R.drawable.flag_mozambique;
-            case "na": //namibia
+            case "nam": // namibia
                 return R.drawable.flag_namibia;
-            case "nc": //new caledonia
-                return R.drawable.flag_new_caledonia;// custom
-            case "ne": //niger
+            case "ncl": // new caledonia
+                return R.drawable.flag_new_caledonia;
+            case "ner": // niger
                 return R.drawable.flag_niger;
-            case "nf": //Norfolk
+            case "nfk": // norfolk island
                 return R.drawable.flag_norfolk_island;
-            case "ng": //nigeria
+            case "nga": // nigeria
                 return R.drawable.flag_nigeria;
-            case "ni": //nicaragua
+            case "nic": // nicaragua
                 return R.drawable.flag_nicaragua;
-            case "nl": //netherlands
+            case "nld": // netherlands
                 return R.drawable.flag_netherlands;
-            case "no": //norway
+            case "nor": // norway
                 return R.drawable.flag_norway;
-            case "np": //nepal
+            case "npl": // nepal
                 return R.drawable.flag_nepal;
-            case "nr": //nauru
+            case "nru": // nauru
                 return R.drawable.flag_nauru;
-            case "nu": //niue
+            case "niu": // niue
                 return R.drawable.flag_niue;
-            case "nz": //new zealand
+            case "nzl": // new zealand
                 return R.drawable.flag_new_zealand;
-            case "om": //oman
+            case "omn": // oman
                 return R.drawable.flag_oman;
-            case "pa": //panama
+            case "pan": // panama
                 return R.drawable.flag_panama;
-            case "pe": //peru
+            case "per": // peru
                 return R.drawable.flag_peru;
-            case "pf": //french polynesia
+            case "pyf": // french polynesia
                 return R.drawable.flag_french_polynesia;
-            case "pg": //papua new guinea
+            case "png": // papua new guinea
                 return R.drawable.flag_papua_new_guinea;
-            case "ph": //philippines
+            case "phl": // philippines
                 return R.drawable.flag_philippines;
-            case "pk": //pakistan
+            case "pak": // pakistan
                 return R.drawable.flag_pakistan;
-            case "pl": //poland
+            case "pol": // poland
                 return R.drawable.flag_poland;
-            case "pm": //saint pierre and miquelon
+            case "spm": // saint pierre and miquelon
                 return R.drawable.flag_saint_pierre;
-            case "pn": //pitcairn
+            case "pcn": // pitcairn islands
                 return R.drawable.flag_pitcairn_islands;
-            case "pr": //puerto rico
+            case "pri": // puerto rico
                 return R.drawable.flag_puerto_rico;
-            case "ps": //palestine
+            case "pse": // palestine
                 return R.drawable.flag_palestine;
-            case "pt": //portugal
+            case "prt": // portugal
                 return R.drawable.flag_portugal;
-            case "pw": //palau
+            case "plw": // palau
                 return R.drawable.flag_palau;
-            case "py": //paraguay
+            case "pry": // paraguay
                 return R.drawable.flag_paraguay;
-            case "qa": //qatar
+            case "qat": // qatar
                 return R.drawable.flag_qatar;
-            case "re": //la reunion
-                return R.drawable.flag_martinique; // no exact flag found
-            case "ro": //romania
+            case "reu": // reunion
+                return R.drawable.flag_martinique;
+            case "rou": // romania
                 return R.drawable.flag_romania;
-            case "rs": //serbia
-                return R.drawable.flag_serbia; // custom
-            case "ru": //russian federation
+            case "srb": // serbia
+                return R.drawable.flag_serbia;
+            case "rus": // russia
                 return R.drawable.flag_russian_federation;
-            case "rw": //rwanda
+            case "rwa": // rwanda
                 return R.drawable.flag_rwanda;
-            case "sa": //saudi arabia
+            case "sau": // saudi arabia
                 return R.drawable.flag_saudi_arabia;
-            case "sb": //solomon islands
+            case "slb": // solomon islands
                 return R.drawable.flag_soloman_islands;
-            case "sc": //seychelles
+            case "syc": // seychelles
                 return R.drawable.flag_seychelles;
-            case "sd": //sudan
+            case "sdn": // sudan
                 return R.drawable.flag_sudan;
-            case "se": //sweden
+            case "swe": // sweden
                 return R.drawable.flag_sweden;
-            case "sg": //singapore
+            case "sgp": // singapore
                 return R.drawable.flag_singapore;
-            case "sh": //saint helena, ascension and tristan da cunha
-                return R.drawable.flag_saint_helena; // custom
-            case "si": //slovenia
+            case "shn": // saint helena
+                return R.drawable.flag_saint_helena;
+            case "svn": // slovenia
                 return R.drawable.flag_slovenia;
-            case "sk": //slovakia
+            case "svk": // slovakia
                 return R.drawable.flag_slovakia;
-            case "sl": //sierra leone
+            case "sle": // sierra leone
                 return R.drawable.flag_sierra_leone;
-            case "sm": //san marino
+            case "smr": // san marino
                 return R.drawable.flag_san_marino;
-            case "sn": //senegal
+            case "sen": // senegal
                 return R.drawable.flag_senegal;
-            case "so": //somalia
+            case "som": // somalia
                 return R.drawable.flag_somalia;
-            case "sr": //suriname
+            case "sur": // suriname
                 return R.drawable.flag_suriname;
-            case "ss": //south sudan
+            case "ssd": // south sudan
                 return R.drawable.flag_south_sudan;
-            case "st": //sao tome and principe
+            case "stp": // sao tome and principe
                 return R.drawable.flag_sao_tome_and_principe;
-            case "sv": //el salvador
+            case "slv": // el salvador
                 return R.drawable.flag_el_salvador;
-            case "sx": //sint maarten
+            case "sxm": // sint maarten
                 return R.drawable.flag_sint_maarten;
-            case "sy": //syrian arab republic
+            case "syr": // syria
                 return R.drawable.flag_syria;
-            case "sz": //swaziland
+            case "swz": // eswatini
                 return R.drawable.flag_swaziland;
-            case "tc": //turks & caicos islands
+            case "tca": // turks and caicos islands
                 return R.drawable.flag_turks_and_caicos_islands;
-            case "td": //chad
+            case "tcd": // chad
                 return R.drawable.flag_chad;
-            case "tg": //togo
+            case "tgo": // togo
                 return R.drawable.flag_togo;
-            case "th": //thailand
+            case "tha": // thailand
                 return R.drawable.flag_thailand;
-            case "tj": //tajikistan
+            case "tjk": // tajikistan
                 return R.drawable.flag_tajikistan;
-            case "tk": //tokelau
-                return R.drawable.flag_tokelau; // custom
-            case "tl": //timor-leste
+            case "tkl": // tokelau
+                return R.drawable.flag_tokelau;
+            case "tls": // timor-leste
                 return R.drawable.flag_timor_leste;
-            case "tm": //turkmenistan
+            case "tkm": // turkmenistan
                 return R.drawable.flag_turkmenistan;
-            case "tn": //tunisia
+            case "tun": // tunisia
                 return R.drawable.flag_tunisia;
-            case "to": //tonga
+            case "ton": // tonga
                 return R.drawable.flag_tonga;
-            case "tr": //turkey
+            case "tur": // turkey
                 return R.drawable.flag_turkey;
-            case "tt": //trinidad & tobago
+            case "tto": // trinidad and tobago
                 return R.drawable.flag_trinidad_and_tobago;
-            case "tv": //tuvalu
+            case "tuv": // tuvalu
                 return R.drawable.flag_tuvalu;
-            case "tw": //taiwan, province of china
+            case "twn": // taiwan
                 return R.drawable.flag_taiwan;
-            case "tz": //tanzania, united republic of
+            case "tza": // tanzania
                 return R.drawable.flag_tanzania;
-            case "ua": //ukraine
+            case "ukr": // ukraine
                 return R.drawable.flag_ukraine;
-            case "ug": //uganda
+            case "uga": // uganda
                 return R.drawable.flag_uganda;
-            case "us": //united states
+            case "usa": // united states
                 return R.drawable.flag_united_states_of_america;
-            case "uy": //uruguay
+            case "ury": // uruguay
                 return R.drawable.flag_uruguay;
-            case "uz": //uzbekistan
+            case "uzb": // uzbekistan
                 return R.drawable.flag_uzbekistan;
-            case "va": //holy see (vatican city state)
+            case "vat": // vatican city
                 return R.drawable.flag_vatican_city;
-            case "vc": //st vincent & the grenadines
+            case "vct": // saint vincent and the grenadines
                 return R.drawable.flag_saint_vicent_and_the_grenadines;
-            case "ve": //venezuela, bolivarian republic of
+            case "ven": // venezuela
                 return R.drawable.flag_venezuela;
-            case "vg": //british virgin islands
+            case "vgb": // british virgin islands
                 return R.drawable.flag_british_virgin_islands;
-            case "vi": //us virgin islands
+            case "vir": // us virgin islands
                 return R.drawable.flag_us_virgin_islands;
-            case "vn": //vietnam
+            case "vnm": // vietnam
                 return R.drawable.flag_vietnam;
-            case "vu": //vanuatu
+            case "vut": // vanuatu
                 return R.drawable.flag_vanuatu;
-            case "wf": //wallis and futuna
+            case "wlf": // wallis and futuna
                 return R.drawable.flag_wallis_and_futuna;
-            case "ws": //samoa
+            case "wsm": // samoa
                 return R.drawable.flag_samoa;
-            case "xk": //kosovo
+            case "xkx": // kosovo
                 return R.drawable.flag_kosovo;
-            case "ye": //yemen
+            case "yem": // yemen
                 return R.drawable.flag_yemen;
-            case "yt": //mayotte
-                return R.drawable.flag_martinique; // no exact flag found
-            case "za": //south africa
+            case "myt": // mayotte
+                return R.drawable.flag_martinique;
+            case "zaf": // south africa
                 return R.drawable.flag_south_africa;
-            case "zm": //zambia
+            case "zmb": // zambia
                 return R.drawable.flag_zambia;
-            case "zw": //zimbabwe
+            case "zwe": // zimbabwe
                 return R.drawable.flag_zimbabwe;
+//            case "ZZZ":
+//                return R.drawable.flag_countries(reg.) unknow;
             default:
                 return R.drawable.flag_transparent;
         }
